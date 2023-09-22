@@ -1,12 +1,15 @@
+import { useState } from "react";
 import "./App.css";
-import { Card } from "./components/Card/Card";
+import WeatherComponent from "./components/WeatherComponent";
 import { NavBar } from "./components/NavBar/NavBar";
 
 function App() {
+  const [city, setCity] = useState("");
+
   return (
     <div className="App">
       <NavBar />
-      <Card />
+      <WeatherComponent city={city} />
     </div>
   );
 }

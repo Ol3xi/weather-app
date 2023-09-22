@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from "../FontowsomeIcon";
+import WeatherComponent from "../WeatherComponent";
+
 import "./NavBar.css";
 
 export const NavBar = () => {
@@ -27,6 +29,7 @@ export const NavBar = () => {
           ></input>
         </div>
       </div>
+      <WeatherComponent city={inputValue} />
     </>
   );
 };
